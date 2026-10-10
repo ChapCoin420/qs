@@ -1,0 +1,22 @@
+﻿n,date,tool,query,result
+1,2026-10-10,WebSearch (extended),"""פינוי בינוי"" ""מכרז יזמים"" חיפה 2026",no open invitation found
+2,2026-10-10,WebSearch (extended),"""בחירת יזם"" פינוי בינוי קריית ביאליק/מוצקין/ים/אתא 2026",no open invitation found
+3,2026-10-10,WebSearch (extended),מכרז יזמים פינוי בינוי נשר/טירת כרמל נציגות בעלי הדירות,no open invitation found
+4,2026-10-10,WebSearch (extended),"""הזמנה להציע הצעות"" יזמים פינוי בינוי חיפה עורך דין בעלי הדירות",no open invitation found
+5,2026-10-10,WebSearch (extended),"""מכרז דיירים"" פינוי בינוי חיפה 2026",no open invitation found
+6,2026-10-10,WebSearch (extended),"""פנייה ליזמים""/""קול קורא ליזמים"" פינוי בינוי חיפה/קריות/נשר",no open invitation found
+7,2026-10-10,WebSearch (extended),עיריית חיפה מנהלת התחדשות עירונית מכרז יזם 2026,no open invitation found
+8,2026-10-10,WebSearch (extended),נבחר יזם פינוי בינוי חיפה 2026,no open invitation found
+9,2026-10-10,WebSearch (extended),"""מחפשים יזם""/""איתור יזם""/""החלפת יזם"" פינוי בינוי חיפה/קריות/נשר",no open invitation found
+10,2026-10-10,WebSearch (extended),קריית ביאליק ההסתדרות העצמאות יזם חדש,no open invitation found
+11,2026-10-10,WebSearch (extended),סעדיה גאון חיפה מכרז יזמים,no open invitation found
+12,2026-10-10,WebSearch (extended),מכרז יזמים קריית מוצקין/ים/אתא 2026,no open invitation found
+13,2026-10-10,WebSearch (extended),ניהול מכרזי יזמים צפון חיפה מנהל מכרז,no open invitation found
+14,2026-10-10,WebSearch (extended),אביבים התחדשות עירונית חיפה מכרז יזמים 2026,no open invitation found
+15,2026-10-10,WebSearch (extended),טירת כרמל פינוי בינוי 2026 מכרז דיירים,no open invitation found
+16,2026-10-10,WebSearch (extended),נשר פינוי בינוי 2026 יזם נבחר,no open invitation found
+17,2026-10-10,WebSearch (extended),"""בקשה לקבלת הצעות"" יזם פינוי בינוי ""מועד אחרון להגשת"" 2026",no open invitation found
+18,2026-10-10,WebSearch (extended),חיפה אזור שיקום – חוק שיקום נזקי מלחמה 2026,no open invitation found
+19,2026-10-10,WebSearch (extended),"עו""ד בעלי הדירות ""מכרז יזמים"" קריות 2026 ""הגשת הצעות""",no open invitation found
+-,2026-10-10,WebFetch/curl,11 direct page fetches,BLOCKED by environment network policy (DNS/CONNECT rejected)
+STOP,2026-10-10,-,-,Stop reason: 19 query variants across all 4 areas returned only closed awards/plans; documents could not be opened to verify

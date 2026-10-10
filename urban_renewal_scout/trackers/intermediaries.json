@@ -1,0 +1,38 @@
+[
+  {
+    "id": "INT-001",
+    "name": "אביבים התחדשות עירונית",
+    "role": "חברה מארגנת / ליווי בעלים",
+    "observed_coverage": "חיפה (נווה שאנן, לאון בלום)",
+    "source_ids": "SRC-019;SRC-020",
+    "observed_deal_flow": "2 מכרזים מדווחים שהסתיימו",
+    "official_contact": "UNKNOWN – לא אומת"
+  },
+  {
+    "id": "INT-002",
+    "name": "יוסף עזרא ושות'",
+    "role": "עו\"ד בעלי דירות",
+    "observed_coverage": "טירת כרמל, קריית ביאליק",
+    "source_ids": "SRC-024",
+    "observed_deal_flow": "מכרז יזמים אחד (נופי רוממה) לפי אתר המשרד",
+    "official_contact": "UNKNOWN – לא אומת"
+  },
+  {
+    "id": "INT-003",
+    "name": "קבוצת בולד (b-g.org.il)",
+    "role": "חברה מארגנת",
+    "observed_coverage": "UNKNOWN",
+    "source_ids": "SRC-025",
+    "observed_deal_flow": "טענה שיווקית בלבד",
+    "official_contact": "UNKNOWN – לא אומת"
+  },
+  {
+    "id": "INT-004",
+    "name": "מנשה שמש קיים טכנולוגיות",
+    "role": "מארגן דיירים",
+    "observed_coverage": "חיפה (סעדיה גאון)",
+    "source_ids": "SRC-004",
+    "observed_deal_flow": "תוכן ממומן ישן",
+    "official_contact": "UNKNOWN – לא אומת"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "CLS-001",
+    "city": "קריית אתא",
+    "location": "אברהם טביב",
+    "units": "~300",
+    "selected_developer": "גלעד מאי",
+    "reported_date": "~2026-08",
+    "source_ids": "SRC-016"
+  },
+  {
+    "id": "CLS-002",
+    "city": "קריית אתא",
+    "location": "סוקולוב/העצמאות",
+    "units": "84 -> ~400",
+    "selected_developer": "גשם החזקות",
+    "reported_date": "~2026-01",
+    "source_ids": "SRC-015"
+  },
+  {
+    "id": "CLS-003",
+    "city": "קריית ביאליק",
+    "location": "בן גוריון",
+    "units": "18 -> ~100",
+    "selected_developer": "יסודות איתנים + שותף",
+    "reported_date": "~2026-02",
+    "source_ids": "SRC-012"
+  },
+  {
+    "id": "CLS-004",
+    "city": "חיפה",
+    "location": "נווה שאנן (מתחם אסטרטגי)",
+    "units": "~2,200",
+    "selected_developer": "RENEW",
+    "reported_date": "2026-04-01",
+    "source_ids": "SRC-018"
+  },
+  {
+    "id": "CLS-005",
+    "city": "חיפה",
+    "location": "לאון בלום-חנה סנש",
+    "units": "~1,030",
+    "selected_developer": "אזורים",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-019"
+  },
+  {
+    "id": "CLS-006",
+    "city": "חיפה",
+    "location": "נתיב החן, נווה שאנן",
+    "units": "~570",
+    "selected_developer": "E-WAVE",
+    "reported_date": "~2025-06",
+    "source_ids": "SRC-020"
+  },
+  {
+    "id": "CLS-007",
+    "city": "נשר",
+    "location": "המרגניות/צה\"ל",
+    "units": "152 -> ~800",
+    "selected_developer": "אאורה",
+    "reported_date": "2025-01-05",
+    "source_ids": "SRC-021"
+  },
+  {
+    "id": "CLS-008",
+    "city": "נשר",
+    "location": "UNKNOWN",
+    "units": "170 -> ~950",
+    "selected_developer": "UNKNOWN (תגית: Ewave)",
+    "reported_date": "2025-04-03",
+    "source_ids": "SRC-022"
+  },
+  {
+    "id": "CLS-009",
+    "city": "קריית מוצקין",
+    "location": "חשמונאים 40-62",
+    "units": "236 -> ~1,200",
+    "selected_developer": "אאורה",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-013"
+  },
+  {
+    "id": "CLS-010",
+    "city": "קריית מוצקין",
+    "location": "דרך עכו/ההגנה/הרצוג",
+    "units": "72 -> ~340",
+    "selected_developer": "אב-גד + Ewave",
+    "reported_date": "~2025-04",
+    "source_ids": "SRC-014"
+  },
+  {
+    "id": "CLS-011",
+    "city": "קריית ביאליק",
+    "location": "UNKNOWN",
+    "units": "~900",
+    "selected_developer": "אב-גד + E-WAVE",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-009"
+  },
+  {
+    "id": "CLS-012",
+    "city": "קריית ביאליק",
+    "location": "מתחם הגליל",
+    "units": "112 -> ~700",
+    "selected_developer": "אזורים",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-011"
+  },
+  {
+    "id": "CLS-013",
+    "city": "קריית ביאליק",
+    "location": "דרום (שפרעם)",
+    "units": "36 -> ~220",
+    "selected_developer": "פרופדו",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-010"
+  },
+  {
+    "id": "CLS-014",
+    "city": "קריית ים",
+    "location": "שכונת צה\"ל",
+    "units": "96 -> 519",
+    "selected_developer": "רוטשטיין",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-017"
+  },
+  {
+    "id": "CLS-015",
+    "city": "טירת כרמל",
+    "location": "UNKNOWN",
+    "units": "362",
+    "selected_developer": "רוטשטיין",
+    "reported_date": "~2024-07",
+    "source_ids": "SRC-023"
+  },
+  {
+    "id": "CLS-016",
+    "city": "טירת כרמל",
+    "location": "ז'בוטינסקי-ויצמן-כלניות-נרקיסים",
+    "units": "UNKNOWN",
+    "selected_developer": "נופי רוממה",
+    "reported_date": "UNKNOWN",
+    "source_ids": "SRC-024"
+  }
+]
