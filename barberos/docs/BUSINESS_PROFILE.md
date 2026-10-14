@@ -14,7 +14,7 @@ viewed). Every fact below is **unverified until the owner confirms it**. Conflic
 | Founded | Operating since 2019 (official site, per search summary) | Medium |
 | Phones | 04-6016383 (landline); 050-9664604 (mobile, some listings) | Medium |
 | Websites | weinsbarbershop.co.il (main) and weinsbs.co.il (incl. `/shop` product store) | Medium |
-| Social | Facebook `weinsbs`; TikTok `@weins_bs`; Instagram `weins_barbershop`; Linktree `weinsbarbershop` | Medium |
+| Social | Facebook `weinsbs`; TikTok `@weins_bs`; Instagram `weins_barbershop` (confirmed by owner 2026-10-14; not viewable from this environment); Linktree `weinsbarbershop` | Medium |
 | Current booking | Calmark (calmark.io); booking link on the official site | Medium |
 
 ## Story & positioning (press)
