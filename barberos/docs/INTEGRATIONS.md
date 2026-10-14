@@ -1,0 +1,20 @@
+# Integrations
+
+All external services sit behind ports (interfaces) in `modules/integrations/`, with a fake
+implementation for tests and local development.
+
+| Integration | Phase | Purpose | Notes |
+|---|---|---|---|
+| **WhatsApp Business Platform (Cloud API, Meta)** | 3 (reminders in 2) | Receptionist, reminders, waitlist offers, OTP | Requires Meta Business verification, a dedicated number, approved Hebrew templates. Free-form replies only inside the 24 h customer-service window; outside it, templates (utility / marketing / authentication — priced differently). Webhooks signed with app secret. Business-specific bots only (general-purpose AI assistants barred since 15 Jan 2026). Marketing messages need opt-in per WhatsApp policy *and* Israeli law. |
+| **Claude API (Anthropic)** | 3 | Hebrew understanding, tool use | Tool-use loop server-side; model tier chosen by Hebrew eval (quality vs latency/cost); prompt versioning; zero data used beyond the request; DPA review. |
+| **SMS gateway** (Israeli provider, TBD) | 2 | OTP + reminder fallback | Choose by deliverability in Israel, sender-ID support, API quality. |
+| **Email** (transactional, EU region) | 2 | Confirmations for customers who opt to give email | Optional channel. |
+| **Google Calendar** | 2 | Push appointments to barbers' calendars | OAuth per barber, tokens encrypted; one-way first. ICS feed as zero-setup alternative. |
+| **Maps** | 1 | Location/directions | Static map image + deep links (Google Maps / Waze) to avoid heavy embeds; text address always present. |
+| **Analytics** | 1 | Traffic & conversion | Privacy-friendly, cookieless, EU-hosted (e.g. Plausible-type) — final choice in Phase 1. |
+| **Error tracking** | 1 | Exceptions | EU region, PII scrubbing. |
+| **Payments** (Israeli PSP, e.g. hosted fields/tokenization) | Later, if deposits wanted | Deposits / no-show fees | Hosted payment page only — no card data touches our servers (PCI scope minimal). |
+| **Google Business Profile / reviews** | 4–5 | Review requests, Reserve links | Evaluate later. |
+
+## Contracts / DPAs checklist
+Meta, Anthropic, hosting, DB, SMS, email, error tracking, analytics — record data region, sub-processors, retention.
