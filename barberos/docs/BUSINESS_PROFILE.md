@@ -5,19 +5,21 @@ blocked by the environment's network policy, so pages, photos and full articles 
 viewed). Every fact below is **unverified until the owner confirms it**. Conflicts are listed, not resolved.
 
 ## Identity
-| Item | Finding | Confidence |
-|---|---|---|
-| Name | Wein's Barbershop / Wein's Barber Shop / Weins BarberShop (spelling varies) | High |
-| Hebrew descriptor | "מספרת בוטיק גברים וזקנים" (directory listing) | Medium |
-| Address | בת חן 64, חיפה | High |
-| Owner | Baruch Wein (ברוך ויין) — named in a 13TV feature and as directory contact | Medium–High |
-| Founded | Operating since 2019 (official site, per search summary) | Medium |
-| Phones | 04-6016383 (landline); 050-9664604 (mobile, some listings) | Medium |
-| Websites | weinsbarbershop.co.il (main) and weinsbs.co.il (incl. `/shop` product store) | Medium |
-| Social | Facebook `weinsbs`; TikTok `@weins_bs`; Instagram `weins_barbershop` (confirmed by owner 2026-10-14; not viewable from this environment); Linktree `weinsbarbershop` | Medium |
-| Current booking | Calmark (calmark.io); booking link on the official site | Medium |
+
+| Item              | Finding                                                                                                                                                              | Confidence  |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| Name              | Wein's Barbershop / Wein's Barber Shop / Weins BarberShop (spelling varies)                                                                                          | High        |
+| Hebrew descriptor | "מספרת בוטיק גברים וזקנים" (directory listing)                                                                                                                       | Medium      |
+| Address           | בת חן 64, חיפה                                                                                                                                                       | High        |
+| Owner             | Baruch Wein (ברוך ויין) — named in a 13TV feature and as directory contact                                                                                           | Medium–High |
+| Founded           | Operating since 2019 (official site, per search summary)                                                                                                             | Medium      |
+| Phones            | 04-6016383 (landline); 050-9664604 (mobile, some listings)                                                                                                           | Medium      |
+| Websites          | weinsbarbershop.co.il (main) and weinsbs.co.il (incl. `/shop` product store)                                                                                         | Medium      |
+| Social            | Facebook `weinsbs`; TikTok `@weins_bs`; Instagram `weins_barbershop` (confirmed by owner 2026-10-14; not viewable from this environment); Linktree `weinsbarbershop` | Medium      |
+| Current booking   | Calmark (calmark.io); booking link on the official site                                                                                                              | Medium      |
 
 ## Story & positioning (press)
+
 - **13TV, July 2021** ("recommended — beauty & care" feature, i.e. promotional profile rather than
   independent review): presents the shop as a standout Israeli barbershop and Baruch Wein as a young
   entrepreneur who dreamed his whole life of becoming a barber. Further snippets (search engine,
@@ -31,16 +33,18 @@ viewed). Every fact below is **unverified until the owner confirms it**. Conflic
   modern cuts, personal service, appointments only.
 
 ## Offering (to confirm — prices likely outdated)
-| Service | Price seen (Calmark) |
-|---|---|
-| Men's haircut | ₪50 |
-| Haircut + beard | ₪60 |
-| Child's haircut (under 15) | ₪40 |
-Also mentioned: beard styling, traditional shave, a "spa" treatment, retail hair/beard products
-(e.g. leave-in conditioner ₪109 on the web shop), barber academy/courses.
-Price level conflicts across listings (₪₪ vs ₪₪₪₪).
+
+| Service                                                                                         | Price seen (Calmark) |
+| ----------------------------------------------------------------------------------------------- | -------------------- |
+| Men's haircut                                                                                   | ₪50                  |
+| Haircut + beard                                                                                 | ₪60                  |
+| Child's haircut (under 15)                                                                      | ₪40                  |
+| Also mentioned: beard styling, traditional shave, a "spa" treatment, retail hair/beard products |
+| (e.g. leave-in conditioner ₪109 on the web shop), barber academy/courses.                       |
+| Price level conflicts across listings (₪₪ vs ₪₪₪₪).                                             |
 
 ## Reputation
+
 - Easy.co.il: 9.4 from ~504 reviews; Google (as quoted there): ~9.8 from ~498.
 - TopIsrael: ranked #1 of 20 barbershops in Haifa, 5.0 from ~447 reviews.
 - Barberhead: 5.0 from 31; Review Euro: 5.0 from 22.
@@ -53,11 +57,13 @@ Price level conflicts across listings (₪₪ vs ₪₪₪₪).
   (needed for the accessibility statement's physical-access section).
 
 ## Hours — conflicting, must be confirmed
+
 Sources disagree (one official-site version: Thu 10:30–20:00, Fri 08:00–14:00; another:
 Thu 09:00–19:00, Fri 08:00–15:00; Waze: Fri 07:00–14:30 and Saturday-evening hours; one says
 Wednesday closed, another Wednesday open late). Saturday-night (מוצ״ש) opening appears plausible.
 
 ## Implications for BarberOS
+
 1. **Brand is personal:** a founder story (young barber who made his dream real, since 2019) is the
    emotional core for the About page and the home-page narrative — needs owner interview + portrait.
 2. **Booking is the #1 pain point in reviews** → Phase 2 is a direct business win. Plan migration
@@ -73,6 +79,7 @@ Wednesday closed, another Wednesday open late). Saturday-night (מוצ״ש) open
    must wait for owner assets (logo, Instagram photos, interior photos) or allowed network access.
 
 ## Questions raised by this research
+
 - Confirm the spelling/wordmark ("Wein's" with apostrophe?) and the Hebrew name (ויינס?).
 - Team today: who besides Baruch? Names, specialties, photos.
 - Is the academy active? Is the product shop worth keeping online?
@@ -80,6 +87,7 @@ Wednesday closed, another Wednesday open late). Saturday-night (מוצ״ש) open
 - Which domain to keep; access to current site host & Calmark export.
 
 ## Sources
+
 - 13TV feature: https://13tv.co.il/item/special/recommended/beauty-and-care/weinsbarbershop-2266348/
 - Official sites: https://www.weinsbarbershop.co.il/ · https://www.weinsbs.co.il/ · https://www.weinsbs.co.il/shop
 - Easy.co.il: https://easy.co.il/en/page/10061590

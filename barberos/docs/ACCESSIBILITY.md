@@ -4,6 +4,7 @@
 > Conformance to WCAG does not by itself establish Israeli legal compliance.
 
 ## 1. Legal & standards landscape (verify current versions before launch)
+
 - **Equal Rights for Persons with Disabilities Law, 5758-1998** and the
   **Equal Rights for Persons with Disabilities (Service Accessibility Adjustments) Regulations,
   5773-2013**, regulation 35 — internet services must meet **Israeli Standard SI 5568**.
@@ -21,6 +22,7 @@
 Hebrew/RTL specifics. If the official text adds requirements, they are added here.
 
 ## 2. Design & build rules
+
 - Semantic HTML first; ARIA only when no native element exists. `lang="he" dir="rtl"`; English
   fragments wrapped with `lang="en" dir="ltr"`/`<bdi>`.
 - Landmarks on every page; one `h1`; logical heading order; skip link to main content.
@@ -42,6 +44,7 @@ Hebrew/RTL specifics. If the official text adds requirements, they are added her
 - No accessibility overlay widgets (ADR-008).
 
 ## 3. Automated testing
+
 - `eslint-plugin-jsx-a11y` (CI blocking).
 - Playwright + `@axe-core/playwright` on every route and key states (menu open, dialog open,
   form errors, booking steps), mobile + desktop viewports — 0 violations required.
@@ -49,6 +52,7 @@ Hebrew/RTL specifics. If the official text adds requirements, they are added her
 - Contrast check script for design tokens.
 
 ## 4. Manual audit procedure (each release with UI change; full audit before launch)
+
 1. Keyboard only: every interactive element reachable, order logical in RTL, no traps.
 2. Screen readers: NVDA + Chrome/Firefox (Windows), VoiceOver + Safari (iOS), TalkBack + Chrome (Android) — Hebrew voices.
 3. Zoom 200% and 400%; 320 px reflow; text-spacing bookmarklet.
@@ -58,6 +62,7 @@ Hebrew/RTL specifics. If the official text adds requirements, they are added her
 7. Record findings: criterion, severity, page, fix, retest date.
 
 ## 5. Deliverables
+
 - Hebrew accessibility statement page (template drafted in Phase 1; filled with coordinator details).
 - Audit report per release; issue tracker labels `a11y-blocker` / `a11y`.
 - Accessible alternative channels: phone and WhatsApp for anyone unable to use the site.

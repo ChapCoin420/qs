@@ -1,0 +1,58 @@
+name: BarberOS CI
+
+on:
+  push:
+    paths: ["barberos/**", ".github/workflows/barberos.yml"]
+  pull_request:
+    paths: ["barberos/**", ".github/workflows/barberos.yml"]
+
+defaults:
+  run:
+    working-directory: barberos
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: barberos
+          POSTGRES_PASSWORD: barberos
+          POSTGRES_DB: barberos
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U barberos" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgres://barberos:barberos@localhost:5432/barberos
+      TEST_DATABASE_URL: postgres://barberos:barberos@localhost:5432/barberos_test
+      NEXT_PUBLIC_SITE_URL: http://localhost:3100
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: barberos/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: barberos/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm lint --max-warnings=0
+      - run: pnpm typecheck
+      - name: Create test database
+        run: PGPASSWORD=barberos psql -h localhost -U barberos -d barberos -c "create database barberos_test"
+      - run: pnpm test
+      - run: pnpm db:migrate && pnpm db:seed
+      - run: pnpm build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: barberos/playwright-report
+          retention-days: 7

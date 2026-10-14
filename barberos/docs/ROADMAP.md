@@ -3,15 +3,42 @@
 Status legend: ☐ not started · ◐ in progress · ☑ done (verified). A phase starts only after the
 previous phase's acceptance criteria are verified and the owner approves.
 
-## Phase 0 — Discovery & architecture ◐
-- ☑ Architecture, domain model, ADRs, risk register, Phase 1 plan drafted.
-- ☐ Owner answers blocking questions (PRODUCT.md ★).
-- ☐ Owner approves Phase 1 plan.
-**Acceptance:** blocking questions answered or explicitly assumed; Phase 1 plan approved.
+## Phase 0 — Discovery & architecture ☑ (closed by owner instruction)
 
-## Phase 1 — Brand, premium website, accessibility, core infrastructure ☐
+- ☑ Architecture, domain model, ADRs, risk register, Phase 1 plan drafted.
+- ◐ Owner answers blocking questions (PRODUCT.md ★) — partly answered via research; remaining items
+  are tracked as VERIFY flags in `src/db/seed-data.ts` and `src/content/site.ts`.
+- ☑ 2026-10-14: owner instructed "build it yourself, on your own judgment, at the highest level" —
+  Phase 1 started on documented assumptions.
+  **Acceptance:** blocking questions answered or explicitly assumed; Phase 1 plan approved.
+
+## Phase 1 — Brand, premium website, accessibility, core infrastructure ◐
+
+### Status (2026-10-14)
+
+| Milestone                 | Status | Notes                                                                                                                                                                                              |
+| ------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.1 Foundation            | ☑      | Next.js 16, TS strict, Drizzle + migrations, seed, Vitest, Playwright + axe, CI workflow. Logger not yet added (no server-side logging needs yet).                                                 |
+| 1.2 Design system         | ◐      | Tokens with contrast tests, fonts self-hosted, core components. Real logo pending (typographic placeholder).                                                                                       |
+| 1.3 Website               | ◐      | Home, services, story/team, visit, accessibility, privacy, 404, sitemap, robots, JSON-LD. Gallery + team photos + terms pending assets/decisions. Booking CTA → shop's current Calmark page.       |
+| 1.4 Core infrastructure   | ◐      | Schema (shops, locations, location_hours, staff, working_hours, schedule_exceptions, services, staff_services, audit_log), append-only audit trigger. Auth + dashboard not started (ADR-011 open). |
+| 1.5 Accessibility & legal | ◐      | axe 0 violations on all routes (mobile + desktop), keyboard/menu tests, statement + privacy drafts. Manual screen-reader audit and professional reviews pending.                                   |
+
+Measured locally (production build, Lighthouse 12 mobile, simulated throttling): Performance 95,
+Accessibility 100, Best Practices 100, SEO 100; LCP 2.7 s (budget 2.5 s — re-measure on production
+CDN), CLS 0.002.
+
+### Open items before Phase 1 acceptance
+
+- Owner: confirm prices, durations, hours, phones, WhatsApp number, copy, photo rights; supply logo
+  and more photography (interior, storefront, team, work).
+- Build: owner dashboard + auth (1.4), gallery page, terms page, error tracking, backups.
+- Audit: manual screen-reader/zoom audit; legal + accessibility consultant review.
+
 ### Milestones
+
 **1.1 Foundation**
+
 - Next.js (App Router) + TS strict (`noUncheckedIndexedAccess`), pnpm, ESLint (incl. jsx-a11y,
   module-boundary rules), Prettier, Vitest, Playwright + `@axe-core/playwright`.
 - `lib/env.ts` (Zod), PII-redacting logger, security headers + CSP, `/api/health`.
@@ -19,6 +46,7 @@ previous phase's acceptance criteria are verified and the owner approves.
 - GitHub Actions CI (path-filtered): lint → typecheck → unit → integration → build → e2e+axe.
 
 **1.2 Brand identity & design system**
+
 - Brand brief (moodboard, tone of voice in Hebrew, logo usage) → owner approval.
 - Tokens: color (AA-verified pairs, light theme first; dark sections as brand accents),
   type scale, spacing, radius, motion (respects `prefers-reduced-motion`).
@@ -29,6 +57,7 @@ previous phase's acceptance criteria are verified and the owner approves.
   Image (with required alt), Dialog, Accordion (FAQ), Map embed with text alternative, Toast.
 
 **1.3 Website (Hebrew, RTL, mobile-first)**
+
 - Pages: Home · Services & prices · Team (barbers) · Gallery · About/Story · Contact & directions ·
   FAQ · Accessibility statement · Privacy policy · Terms · 404/500.
 - Booking CTA on every page: until Phase 2, routes to WhatsApp click-to-chat / phone.
@@ -37,6 +66,7 @@ previous phase's acceptance criteria are verified and the owner approves.
 - Performance budget: LCP < 2.5 s (4G mobile), CLS < 0.1, JS < 150 KB gz on marketing pages.
 
 **1.4 Core infrastructure for Phase 2**
+
 - Schema: shops, locations, users, memberships, staff, services, staff_services,
   working_hours, schedule_exceptions, audit_log.
 - Dashboard auth (ADR-011 decision), owner 2FA, RBAC permission map, audit writes.
@@ -44,6 +74,7 @@ previous phase's acceptance criteria are verified and the owner approves.
 - Error tracking (EU-hosted, PII scrubbing), uptime check, daily backups verified by restore test.
 
 **1.5 Accessibility & legal deliverables**
+
 - Automated: axe on every route in CI (desktop + mobile viewport), eslint-plugin-jsx-a11y.
 - Manual audit: keyboard-only, NVDA+Firefox/Chrome, VoiceOver iOS Safari, TalkBack, 200%/400%
   zoom, text-spacing, Windows high contrast — per ACCESSIBILITY.md checklist.
@@ -51,6 +82,7 @@ previous phase's acceptance criteria are verified and the owner approves.
 - Cookie/analytics: privacy-friendly analytics without consent-requiring cookies, or consent banner.
 
 ### Phase 1 acceptance criteria
+
 1. All pages complete in Hebrew, RTL, owner-approved copy and imagery.
 2. CI green: lint, typecheck, unit, integration, build, e2e; **0 axe violations** on all routes.
 3. Manual accessibility audit completed and documented; blocking findings fixed.
@@ -60,6 +92,7 @@ previous phase's acceptance criteria are verified and the owner approves.
 7. Accessibility statement, privacy policy, terms drafted and sent for professional review.
 
 ## Phase 2 — Booking engine & owner dashboard ☐
+
 Availability engine; web booking (service → barber/any → slot → details → OTP → confirm);
 holds, idempotency, exclusion constraint; cancel/reschedule via signed links; reminders
 (WhatsApp utility template / SMS fallback); waitlist + offers; dashboard calendar (day/week,
@@ -68,17 +101,20 @@ Google Calendar push + ICS. **Acceptance:** concurrency tests (parallel booking 
 zero double bookings; DST/holiday tests; e2e + axe on booking flow; owner pilot week.
 
 ## Phase 3 — WhatsApp AI receptionist ☐
+
 Meta Business verification, Cloud API number, templates approved; webhook pipeline; tool
 registry; conversation state machine; human handoff inbox in dashboard; Hebrew eval suite;
 cost/rate limits. **Acceptance:** eval pass-rate threshold agreed with owner; 0 bookings created
 without explicit confirmation in tests; handoff works end-to-end; 2-week supervised pilot.
 
 ## Phase 4 — CRM, analytics, marketing ☐
+
 Customer profiles & history, visit-frequency/churn signals, retention workflows
 ("time for your next cut"), consent center & opt-out, segments, campaigns with analytics,
 dashboards (revenue, utilization, no-shows, cohorts). **Acceptance:** no marketing send possible
 without recorded consent (tested); opt-out effective immediately; KPIs reconcile with raw data.
 
 ## Phase 5 — Advanced AI & expansion ☐
+
 Demand forecasting, smart gap-filling, personalized rebooking timing, review requests,
 multi-location, multi-shop (RLS), additional languages.
