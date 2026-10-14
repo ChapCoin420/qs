@@ -32,7 +32,7 @@ Two worlds alternate across the site:
 | Token | Value | Use | Notes |
 |---|---|---|---|
 | `ink` | `#0F0E0D` | Primary dark background, text on light | Warm near-black |
-| `linen` | `#EFE8DC` | Primary light background, text on dark | Contrast with ink ≈ 16:1 |
+| `linen` | `#EFE8DC` | Primary light background, text on dark | Contrast with ink 15.8:1 |
 | `brass` | `#C28A3F` | Accents, rules, focus ring on dark | On ink 6.4:1 ✓; on sea 4.1:1 (large text/UI only). **Not** for body text on linen (2.5:1 ✗) |
 | `brass-deep` | `#7A5321` | Accent text/links on linen | On linen 5.6:1 ✓ |
 | `sea` | `#1E3A3C` | Secondary dark sections, footer | Linen on sea 10:1 ✓ |
