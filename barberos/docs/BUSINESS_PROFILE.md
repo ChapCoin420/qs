@@ -20,7 +20,11 @@ viewed). Every fact below is **unverified until the owner confirms it**. Conflic
 ## Story & positioning (press)
 - **13TV, July 2021** ("recommended — beauty & care" feature, i.e. promotional profile rather than
   independent review): presents the shop as a standout Israeli barbershop and Baruch Wein as a young
-  entrepreneur who dreamed his whole life of becoming a barber.
+  entrepreneur who dreamed his whole life of becoming a barber. Further snippets (search engine,
+  page itself blocked): "not just another barbershop but a growing Haifa institution" that draws
+  thousands of men from across the North and the rest of the country; describes Baruch as a
+  young, smart, brilliant entrepreneur who changed how many men approach grooming. Owner shared
+  the article link on 2026-10-14 — full text still to be read (paste or allow `13tv.co.il`).
 - Instagram bio (per search summary): focus on **craft and style**; mentions an **academy** for
   professional barber training.
 - Directories: boutique men's barbershop specializing in haircuts, beard design, traditional shave,
@@ -44,6 +48,9 @@ Price level conflicts across listings (₪₪ vs ₪₪₪₪).
   "quality, convenience and luxury" combined, a team led by Baruch.
 - **Complaints:** the **booking system/policy**, waiting ~20 min past appointment time;
   one reviewer liked the work but not the atmosphere.
+
+- A directory listing mentions **wheelchair accessibility** of the premises — verify on site
+  (needed for the accessibility statement's physical-access section).
 
 ## Hours — conflicting, must be confirmed
 Sources disagree (one official-site version: Thu 10:30–20:00, Fri 08:00–14:00; another:
