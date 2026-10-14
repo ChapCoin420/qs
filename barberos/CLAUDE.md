@@ -3,6 +3,7 @@
 Persistent context for Claude Code sessions. Read this first, then the docs below.
 
 ## What this is
+Client: **Wein's Barbershop**, Bat Chen 64, Haifa.
 BarberOS: a premium, Hebrew-first, RTL-native digital platform for one Israeli
 barbershop (luxury website, booking engine, owner dashboard, WhatsApp AI
 receptionist, CRM, marketing, analytics). Single tenant now; multi-tenant /
@@ -21,6 +22,7 @@ multi-location later without a rewrite.
 ## Documentation map
 | File | Purpose |
 |---|---|
+| `docs/BUSINESS_PROFILE.md` | Researched facts about Wein's Barbershop (unverified until owner confirms) |
 | `docs/PRODUCT.md` | Vision, users, scope, open business questions, assumptions |
 | `docs/ARCHITECTURE.md` | System design, modules, domain model, booking & AI design |
 | `docs/DECISIONS.md` | Architecture Decision Records (ADRs) |

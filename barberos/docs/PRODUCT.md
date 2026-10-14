@@ -1,5 +1,8 @@
 # Product
 
+**Client:** Wein's Barbershop, בת חן 64, חיפה (owner: Baruch Wein — to confirm).
+Research summary: `docs/BUSINESS_PROFILE.md`.
+
 ## Vision
 The most refined digital experience of any barbershop in Israel: a website that
 feels like a luxury brand, booking that takes under 30 seconds, a WhatsApp
