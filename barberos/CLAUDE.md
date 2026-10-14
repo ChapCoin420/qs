@@ -23,6 +23,7 @@ multi-location later without a rewrite.
 | File | Purpose |
 |---|---|
 | `docs/BUSINESS_PROFILE.md` | Researched facts about Wein's Barbershop (unverified until owner confirms) |
+| `docs/BRAND_BRIEF.md` | Draft brand concept, palette, typography, voice, home-page structure |
 | `docs/PRODUCT.md` | Vision, users, scope, open business questions, assumptions |
 | `docs/ARCHITECTURE.md` | System design, modules, domain model, booking & AI design |
 | `docs/DECISIONS.md` | Architecture Decision Records (ADRs) |
